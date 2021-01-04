@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{35705C6C-54CF-4ABB-9F6C-9141B773022A}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ClientInformation.dll = Lib\ClientInformation.dll
+		Lib\eFlow.UI.dll = Lib\eFlow.UI.dll
+		Lib\log4net.dll = Lib\log4net.dll
+		Lib\Newtonsoft.Json.dll = Lib\Newtonsoft.Json.dll
+		Lib\Sidesys.Utilities.dll = Lib\Sidesys.Utilities.dll
+		Lib\SSInterfaces.dll = Lib\SSInterfaces.dll
+		Lib\SSResource.dll = Lib\SSResource.dll
+		Lib\STE.dll = Lib\STE.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA3F6F2A-4456-49A8-BFA8-CBFB24195FC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CENTROHOSPUCE.STE.UI.Web", "CENTROHOSPUCE.STE.UI.Web\CENTROHOSPUCE.STE.UI.Web.csproj", "{C75F6029-14D3-42D5-8E48-6FB874F098FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C75F6029-14D3-42D5-8E48-6FB874F098FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75F6029-14D3-42D5-8E48-6FB874F098FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75F6029-14D3-42D5-8E48-6FB874F098FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75F6029-14D3-42D5-8E48-6FB874F098FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {507D9748-E0B6-48D8-A1D0-AF043949ADDC}
+	EndGlobalSection
+EndGlobal
