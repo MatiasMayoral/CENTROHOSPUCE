@@ -1,0 +1,15 @@
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.csprojAssemblyReference.cache
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.csproj.CoreCompileInputs.cache
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.UI.Web.dll.config
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.UI.Web.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.UI.Web.pdb
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\log4net.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\Newtonsoft.Json.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\Sidesys.SOF.Tools.Proxy.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\STE.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\SSInterfaces.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\SSResource.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\eFlow.UI.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.csproj.CopyComplete
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.pdb
