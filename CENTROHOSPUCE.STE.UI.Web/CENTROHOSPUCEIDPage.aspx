@@ -29,13 +29,18 @@
 
             //creo un div para agregar la entidad y le coloco la clase y el id
             var trClientType = document.createElement('TR');
-            trClientType.className = "LineBaseUp rootLineUp ClientType";
             trClientType.id = "dv" + mClientTypesObject[i].description.replace(/\s/g, '');;
+            trClientType.className = "LineBaseUp rootLineUp ClientType";
+            if (trClientType.id == "dvAseguradoPreferencial" || trClientType.id == "dvNoAseguradoPreferencial")
+            {
+                trClientType.className = "PreferencialLineBaseUp rootLineUp ClientType";                
+            }
             trClientType.value = mClientTypeId;
             trClientType.style.verticalAlign = "middle";
             trClientType.style.marginTop = "50px";
             trClientType.style.cursor = "pointer";
             trClientType.style.width = "500px";
+            trClientType.style.lineHeight = "70px";
 
             //evento click: dispara el TS
             trClientType.addEventListener("click", navigateToTouchscreen, "false"); 
@@ -43,9 +48,15 @@
             trClientType.addEventListener("mouseup", changeAppareance, "false"); 
             //Texto dentro del div
             trClientType.innerHTML = mClientTypesObject[i].description;
-
-            //
-            mDVClientIdentification.append(trClientType);
+            if (trClientType.id == "dvAseguradoPreferencial" || trClientType.id == "dvNoAseguradoPreferencial")
+            {
+                trClientType.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + mClientTypesObject[i].description;                
+            }
+            //Cosa Loca
+            if (trClientType.id != "dvNoIdentificado" && trClientType.id != "dvGC5" && trClientType.id != "dvGC6")
+            {
+                mDVClientIdentification.append(trClientType);
+            }
         }
     }
 
@@ -55,10 +66,19 @@
 
     function changeAppareance(){
         if (arguments[0].type == "mousedown"){
-            this.className = "LineBaseDown rootLineDown ClientType";
+            this.className = "LineBaseUp rootLineDown ClientType";
+            if(this.id == "dvAseguradoPreferencial" || this.id == "dvNoAseguradoPreferencial")
+            {
+                this.className = "PreferencialLineBaseUp rootLineDown ClientType";
+            }
+            
         }
         else{
             this.className = "LineBaseUp rootLineUp ClientType";
+            if(this.id == "dvAseguradoPreferencial" || this.id == "dvNoAseguradoPreferencial")
+            {
+                this.className = "PreferencialLineBaseUp rootLineUp ClientType";
+            }
         }
     }
 
@@ -100,8 +120,10 @@
         }
 
         if (mQuantityOfClientTypes == 5){
+            var mTable = document.getElementById('tableClientTypes');
+            mTable.cellSpacing = "15";
             var mDvEntitySeparatorTop = document.getElementById('EntitySeparatorTop');
-            mDvEntitySeparatorTop.style.height = "140px";
+            mDvEntitySeparatorTop.style.height = "250px";
         }
         if (mQuantityOfClientTypes == 6){
             var mTable = document.getElementById('tableClientTypes');
@@ -113,7 +135,8 @@
             var mTable = document.getElementById('tableClientTypes');
             mTable.cellSpacing = "15";
             var mDvEntitySeparatorTop = document.getElementById('EntitySeparatorTop');
-            mDvEntitySeparatorTop.style.height = "130px";
+            mDvEntitySeparatorTop.style.height = "250px";
+
         }
 
 

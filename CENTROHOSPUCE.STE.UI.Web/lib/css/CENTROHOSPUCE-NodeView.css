@@ -1,0 +1,172 @@
+/* Fuentes Custom */
+@font-face {
+    font-family: UNINEUE-REGULAR;
+    src: url(../../Font/UniNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: UNINEUE-BOLD;
+    src: url(../../Font/UniNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: UNINEUE-REGULARITALIC;
+    src: url(../../Font/UniNeue-RegularItalic.ttf);
+}
+
+
+.BackgroundNode{
+  width: 1024px;
+  height: 768px;
+  background-image: url("C:\\Sidesys\\e-Flow\\view_configuration\\CENTROHOSPUCE\\images\\background0511_nodo.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+/*fondo nodo expandido*/
+.BackgroundNodeExpand{
+  width: 1024px;
+  height: 768px;
+  background-image: url("C:\\Sidesys\\e-Flow\\view_configuration\\CENTROHOSPUCE\\images\\background0511_nodo.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+/*Cabecera*/
+.headNode{
+  height:24%; 
+  width:100%;
+}
+
+
+/* Titulo nodo con pauta */
+.titleNode{
+  FONT-SIZE: 45px; 
+  FONT-FAMILY:UNINEUE-BOLD; 
+  color:#3BAB82;
+}
+
+/*Titulo nodo expandido*/
+.titleNodeExpand{
+  FONT-SIZE: 45px; 
+  FONT-FAMILY:UNINEUE-BOLD; 
+  color:#3BAB82;
+}
+
+
+TD.numbering Table TR
+{
+  color:#1C1E61;
+  background-color : #F1F1F1;
+  FONT-FAMILY:UNINEUE-REGULAR; 
+  font-size: 63px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: hand;
+  height: 105px;
+  table-layout: fixed;
+
+}
+
+
+/* Numero Normal */     
+TD.numbering Table.NumberingItem  
+{
+  border-collapse:collapse;
+  border-spacing:0;
+  border-style:none;
+  border-top: 1px solid #FFFFFF;
+}     
+
+
+/* Numero Novedad */
+TD.numbering Table.NumberingFlashItem 
+{
+  border-collapse:collapse;
+  border-spacing:0;
+  border-style:none;
+}
+
+TD.numbering Table.NumberingFlashItem TR
+{
+  background-color:#1C1E61;
+  color: #3BAB82;
+  font-family: UNINEUE-BOLD;
+  font-weight: bold;
+
+  
+}
+
+
+/* Atributos generales de la tabla de numeracion */    
+TD.numbering .tn .tableNumber
+{
+  
+}
+
+/* Visualizacion de numero con pautas */    
+TD.numbering .tnWithAds
+{
+   font-size: 45px;
+}
+
+/* Visualizacion de descripcion de puesto */
+TD.numbering .dd 
+{
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+/* Visualizacion de descripcion de puesto con pautas*/
+TD.numbering .ddWithAds
+{
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+   font-size: 45px;
+}
+
+/*fondo pauta*/
+.BackgroundAdvertisement{
+height:100px; 
+background-color:white;
+}
+
+/*fondo banner*/
+.BackgroundBanner{
+height:80px; 
+}
+
+/*fuente del banner */
+.fontBanner{
+  font-size: 36px;
+  font-family:UNINEUE-REGULARITALIC; 
+  color:#000000;
+}
+
+
+.cssHideAds
+{
+  width: 0%;
+  display: none;
+}
+
+.cssExpandNumber{
+  width: 100%;
+}
+
+
+
+/* especifica atributos numero normal 
+    para seccion especifica     
+TD.numbering Table.NumberingItem .section_1 {
+    color: white;
+    background-color: #F69679;
+}*/ 
+
+/* especifica atributos numero novedad 
+    para seccion especifica     
+TD.numbering Table.NumberingFlashItem .section_1 {
+    color: white;
+    background-color: red;
+}*/ 
