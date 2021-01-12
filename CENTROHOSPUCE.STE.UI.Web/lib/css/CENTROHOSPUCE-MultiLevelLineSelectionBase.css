@@ -310,6 +310,30 @@
 {
 	background-image: url(C:\\Sidesys\\e-Flow\\view_configuration\\CENTROHOSPUCE\\images\\btn_preferencial_down.png);
 }
+/* Mas tramites Preferenciales */
+.LineBaseUp#dvLine7, .LineBaseUp#dvLine9, .LineBaseUp#dvLine6
+{
+	background-image: url(C:\\Sidesys\\e-Flow\\view_configuration\\CENTROHOSPUCE\\images\\btn_preferencial_up.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#dvLine7 .ButtonText1, #dvLine9 .ButtonText1, #dvLine6 .ButtonText1
+{
+	margin-left: 65px;
+}
+
+#dvLine7 .ButtonText2, #dvLine9 .ButtonText2, #dvLine6 .ButtonText2
+{
+	margin-left: 65px;
+}
+
+.LineBaseDown#dvLine7, .LineBaseDown#dvLine9, .LineBaseDown#dvLine6
+{
+	background-image: url(C:\\Sidesys\\e-Flow\\view_configuration\\CENTROHOSPUCE\\images\\btn_preferencial_down.png);
+}
+
+
 /*Estilos alineaci�n de textos*/
 .CharClass{
 	FONT-FAMILY: UNINEUE-REGULAR;
