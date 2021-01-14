@@ -1,0 +1,11 @@
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\CENTROHOSPUCE.STE.Shared.dll.config
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\CENTROHOSPUCE.STE.Shared.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\CENTROHOSPUCE.STE.Shared.pdb
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\eFlow.UI.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\log4net.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\SSInterfaces.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\bin\SSResource.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.csproj.CopyComplete
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.pdb

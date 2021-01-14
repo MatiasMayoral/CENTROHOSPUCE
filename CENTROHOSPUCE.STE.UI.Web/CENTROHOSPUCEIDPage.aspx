@@ -61,7 +61,7 @@
     }
 
     function navigateToTouchscreen(){
-        window.navigate("Touchscreen.aspx?ClientTypeId=" + this.value);
+        window.navigate("CENTROHOSPUCETouchscreen.aspx?ClientTypeId=" + this.value);
     }
 
     function changeAppareance(){

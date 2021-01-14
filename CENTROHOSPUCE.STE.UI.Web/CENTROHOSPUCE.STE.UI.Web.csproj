@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="eFlow.UI, Version=3.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\eFlow.UI.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Lib\log4net.dll</HintPath>
     </Reference>
@@ -79,10 +83,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CENTROHOSPUCETouchScreen.aspx" />
     <Content Include="CENTROHOSPUCEIDPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CENTROHOSPUCETouchScreen.aspx.cs">
+      <DependentUpon>CENTROHOSPUCETouchScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CENTROHOSPUCETouchScreen.aspx.designer.cs">
+      <DependentUpon>CENTROHOSPUCETouchScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CENTROHOSPUCEIDPage.aspx.cs">
       <DependentUpon>CENTROHOSPUCEIDPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,6 +109,12 @@
     <Folder Include="Font\" />
     <Folder Include="lib\css\" />
     <Folder Include="lib\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CENTROHOSPUCE.STE.Shared\CENTROHOSPUCE.STE.Shared.csproj">
+      <Project>{3eb82d78-9a7c-4f68-8171-0f51a74329f7}</Project>
+      <Name>CENTROHOSPUCE.STE.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

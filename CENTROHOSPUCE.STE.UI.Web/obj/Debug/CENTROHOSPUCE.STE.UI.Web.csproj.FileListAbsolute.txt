@@ -13,3 +13,6 @@ C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\eFlow
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.csproj.CopyComplete
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.dll
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\obj\Debug\CENTROHOSPUCE.STE.UI.Web.pdb
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.Shared.dll
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.Shared.pdb
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.UI.Web\bin\CENTROHOSPUCE.STE.Shared.dll.config
