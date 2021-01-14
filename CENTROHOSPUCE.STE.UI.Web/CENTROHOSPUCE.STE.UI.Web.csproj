@@ -85,6 +85,7 @@
   <ItemGroup>
     <Content Include="CENTROHOSPUCETouchScreen.aspx" />
     <Content Include="CENTROHOSPUCEIDPage.aspx" />
+    <Content Include="Turnos\CENTROHOSPUCENewTask.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,7 +103,15 @@
     <Compile Include="CENTROHOSPUCEIDPage.aspx.designer.cs">
       <DependentUpon>CENTROHOSPUCEIDPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CredentialsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turnos\CENTROHOSPUCENewTask.aspx.cs">
+      <DependentUpon>CENTROHOSPUCENewTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnos\CENTROHOSPUCENewTask.aspx.designer.cs">
+      <DependentUpon>CENTROHOSPUCENewTask.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ConfigFiles\" />

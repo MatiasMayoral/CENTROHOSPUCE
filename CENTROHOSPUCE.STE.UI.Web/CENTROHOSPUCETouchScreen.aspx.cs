@@ -20,6 +20,9 @@ namespace CENTROHOSPUCE.STE.UI.Web
             //se setea el grupo en las extendidas
             mClientCredentials.SetBusinessUnit(groupClient);
 
+            // Serializo las credenciales para guardarlas en la session.				                
+            cLogger.Debug("Guardando en sesión la credencial.");
+            Session[Turnos.CENTROHOSPUCENewTask.CREDENTIALS_KEY] = CredentialsHelper.Serialize(mClientCredentials);
         }
     }
 }
