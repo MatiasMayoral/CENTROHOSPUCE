@@ -325,7 +325,7 @@
 	      onbeforeunload="checkSessionClose();"
 		  class="dvTouchScreenClass">
 	     
-        <form id="Touchscreen2" action="TouchScreen.aspx" method="post">
+        <form id="Touchscreen2" action="CENTROHOSPUCETouchScreen.aspx" method="post">
             <!-- Datos de control de calidad -->
 			<input name="QualityAssuranceEmissionStart" id="QualityAssuranceEmissionStart" type="hidden"/>
 			<input name="QualityAssuranceEmissionFullData" id="QualityAssuranceEmissionFullData" type="hidden"/>
