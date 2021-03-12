@@ -12,13 +12,35 @@ namespace CENTROHOSPUCE.STE.UI.Web
         protected override void UpdateVisualizationModel(System.Xml.XmlNode pVisualizationModelNode)
         {
             //Obtiene dato del grupo desde la url
-            var groupClient = "asegurado";
+            string groupClient = this.Request["ClientTypeId"].ToString();
 
             //creacion de la credencial
             cLogger.Debug("Creando credencial.");
             ClientCredentials mClientCredentials = new ClientCredentials();
             //se setea el grupo en las extendidas
-            mClientCredentials.SetBusinessUnit(groupClient);
+            if(groupClient == "1")
+            {
+                mClientCredentials.ClientCode = "A";
+            }
+            if (groupClient == "2")
+            {
+                mClientCredentials.ClientCode = "AP";
+            }
+            if (groupClient == "3")
+            {
+                mClientCredentials.ClientCode = "NA";
+            }
+            if (groupClient == "4")
+            {
+                mClientCredentials.ClientCode = "NAP";
+            }
+
+            mClientCredentials.DocType = string.Empty;
+            mClientCredentials.DocNumber = string.Empty;
+            mClientCredentials.SetClientTypeId(groupClient); // aca hay que cambiar por SetClientData
+            mClientCredentials.ClientTypeId = int.Parse(groupClient);
+            mClientCredentials.IsIdentified = true;
+            mClientCredentials.IsCompleted = true;
 
             // Serializo las credenciales para guardarlas en la session.				                
             cLogger.Debug("Guardando en sesión la credencial.");

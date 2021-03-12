@@ -12,12 +12,12 @@ namespace CENTROHOSPUCE.STE.Shared.Extensions
 
 
         // El parametro unidad Negocio devuelto por el WS, se guarda en las credenciales CorporateName.
-        public static String GetBusinessUnit(this IClientCredentials pClientCredentials)
+        public static String GetClientTypeId(this IClientCredentials pClientCredentials)
         {
             return pClientCredentials.ClientData[GROUP_CLIENT].ToString();
         }
 
-        public static void SetBusinessUnit(this IClientCredentials pClientCredentials, String pDescriptionClientType)
+        public static void SetClientTypeId(this IClientCredentials pClientCredentials, String pDescriptionClientType)
         {
 
             if (!String.IsNullOrWhiteSpace(pDescriptionClientType))

@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
     
 <LINK href="lib/css/CENTROHOSPUCE-MultiLevelLineSelectionBase.css" type="text/css" rel="stylesheet"></LINK>                        
 
@@ -17,12 +16,34 @@
 <script language="javascript">
     
     var mClientTypes = '<asp:Literal Runat="server" ID="litClientTypes"></asp:Literal>';
+    var mTTL = "<asp:literal id='litTTL' runat='server'></asp:literal>";
     var mClientTypesObject = JSON.parse(mClientTypes);
-    
+
+    var timeOutId = null;
+    var mPreferencial = "False";
+    var PclickImagesClientType = new Array("url('C:/Sidesys/e-Flow/view_configuration/CENTROHOSPUCE/images/btn_preferencial_down.png')");
+    var PnormalImagesClientType = new Array("url('C:/Sidesys/e-Flow/view_configuration/CENTROHOSPUCE/images/btn_preferencial_up.png')");
+
     function renderGroupsClients(){
         
         var mDVClientIdentification = $('#tableClientTypes');
+        //creo un div para agregar preferencial
+            var trPreferencial = document.createElement('TR');
+            trPreferencial.id = "dvPreferencial";
+            trPreferencial.className = "PreferencialLineBaseUp rootLineUp ClientType";
+            trPreferencial.value = mClientTypeId;
+            trPreferencial.style.verticalAlign = "middle";
+            trPreferencial.style.marginTop = "50px";
+            trPreferencial.style.cursor = "pointer";
+            trPreferencial.style.width = "500px";
+            trPreferencial.style.lineHeight = "115px";
+            trPreferencial.style.height = "120px";
 
+            //evento click: cambia boton
+            trPreferencial.addEventListener("click", Preferencial, "false"); 
+            //Texto dentro del div
+            trPreferencial.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "Atención Preferencial";
+            mDVClientIdentification.append(trPreferencial);
         for (var i = 0; i < mClientTypesObject.length; i++) {
             //id del grupo de cliente
             var mClientTypeId = mClientTypesObject[i].id;
@@ -48,39 +69,78 @@
             trClientType.addEventListener("mouseup", changeAppareance, "false"); 
             //Texto dentro del div
             trClientType.innerHTML = mClientTypesObject[i].description;
-            if (trClientType.id == "dvAseguradoPreferencial" || trClientType.id == "dvNoAseguradoPreferencial")
+            if (trClientType.id == "dvNoAsegurado")
             {
-                trClientType.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + mClientTypesObject[i].description;                
+                trClientType.innerHTML = "Privado (No Asegurado)";                
             }
             //Cosa Loca
-            if (trClientType.id != "dvNoIdentificado" && trClientType.id != "dvGC5" && trClientType.id != "dvGC6")
+            if (trClientType.id != "dvNoIdentificado" && trClientType.id != "dvGC5" && trClientType.id != "dvGC6" && trClientType.id != "dvAseguradoPreferencial" && trClientType.id != "dvNoAseguradoPreferencial")
             {
                 mDVClientIdentification.append(trClientType);
             }
         }
+        
     }
 
     function navigateToTouchscreen(){
-        window.navigate("CENTROHOSPUCETouchscreen.aspx?ClientTypeId=" + this.value);
+        if (mPreferencial == "True"){
+            var calculado = this.value + 1;
+            window.navigate("CENTROHOSPUCETouchscreen.aspx?ClientTypeId=" + calculado);
+        }
+        else{
+            window.navigate("CENTROHOSPUCETouchscreen.aspx?ClientTypeId=" + this.value);
+        } 
+    }
+
+    function Preferencial() {
+        //dvPreferencial
+        reStartTimeout();
+        if (mPreferencial == "True") {
+            mPreferencial = "False";
+            document.getElementById("dvPreferencial").style.backgroundImage = PnormalImagesClientType;
+        }
+        else {
+            mPreferencial = "True";
+            document.getElementById("dvPreferencial").style.backgroundImage = PclickImagesClientType;
+        }
+    }
+
+    //cambio MJM
+    function Timeout() {
+        timeOutId = window.setTimeout('window.location.href=("CENTROHOSPUCEIdPage.aspx")',
+                    mTTL * 1000);
+    }
+
+    // Comienza el timeout utilizado para el TTL.
+    function startTimeout() {
+        stopTimeout();
+    }
+
+
+    // Detiene el timeout utilizado para el TTL.
+    function stopTimeout() {
+        if (timeOutId != null) {
+            clearTimeout(timeOutId);
+        }
+    }
+
+    // reinicia el timeout utilizado para el TTL.
+    function reStartTimeout() {
+        stopTimeout();
+        Timeout();
     }
 
     function changeAppareance(){
         if (arguments[0].type == "mousedown"){
             this.className = "LineBaseUp rootLineDown ClientType";
-            if(this.id == "dvAseguradoPreferencial" || this.id == "dvNoAseguradoPreferencial")
-            {
-                this.className = "PreferencialLineBaseUp rootLineDown ClientType";
-            }
             
         }
         else{
             this.className = "LineBaseUp rootLineUp ClientType";
-            if(this.id == "dvAseguradoPreferencial" || this.id == "dvNoAseguradoPreferencial")
-            {
-                this.className = "PreferencialLineBaseUp rootLineUp ClientType";
-            }
         }
     }
+
+
 
     $( document ).ready(function() {
         //renderizo las entidades
@@ -147,14 +207,16 @@
 <head runat="server">
     <title>CENTROHOSPUCE - IDPage</title>
 </head>
-<body>
-    <div class="dvTouchScreenClass" style="WIDTH:1024px;HEIGHT:768px">    
+<body style= "margin: 0px;">
+    <div class="dvTouchScreenClassIDPAGE"> 
+        <div class="WelcomeText">Bienvenido, si usted es una persona con discapacidad, esta embarazada o pertenece a la tercera edad, por favor pulse el botón "ATENCIÓN PREFERENCIAL", previo al ingreso de tomar turno.</div>     
         <div id="EntitySeparatorTop"></div>  
         <div id="EntitySeparatorLeft"></div>
         <div id="dvTable" style="width: 500px; float:left">
             <table id ="tableClientTypes" height="100%" width="100%" cellSpacing="40" cellPadding="0" border="0" width="500px"></table>
         </div>      
         <div id="EntitySeparatorRight"></div>
+        <div id="EntitySeparatorTop"></div>
         <!--<div id="dvClientIdentification" align="center"></div>-->
         
         

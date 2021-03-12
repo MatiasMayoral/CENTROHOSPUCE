@@ -9,3 +9,4 @@ C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.csproj.CopyComplete
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.dll
 C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.pdb
+C:\Users\Quales Group\Documents\CENTROHOSPUCE\CENTROHOSPUCE.STE.Shared\obj\Debug\CENTROHOSPUCE.STE.Shared.csprojAssemblyReference.cache

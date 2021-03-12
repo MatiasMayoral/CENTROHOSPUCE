@@ -21,6 +21,12 @@ namespace CENTROHOSPUCE.STE.UI.Web
             Hashtable mHash;
             DataTable mClientTypeDT;
 
+            if (!this.IsPostBack)
+            {
+               this.litTTL.Text = STE2.LoginData.GetTTL(this,
+               STE2.eFlow.ViewType.TouchScreen);
+            }
+
             //Se obtienen los grupos de cliente
             mHash = STE2.eFlow.GetClientTypes(STE2.LoginData.GetUserName(this),
                                              STE2.LoginData.GetPassword(this),
